@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deactivation form</title>
+    <style>
+        fieldset{
+            background-color: antiquewhite;
+          align-items: normal;
+        }
+    </style>
+</head>
+<body >
+    <form action="">
+        <fieldset style="height: 50; width: 5px;">
+    <h1>Account details</h1>
+    <p>All of your account details will not be visible on public profile.</p>
+    <label for="">First name</label> 
+    <input type="text" value="Demo"> 
+    <label for="">Last name</label>
+    <input type="text" value="User"><br><br>
+    <label for="">Account email</label>
+    <input type="text" value="demo_user@backcrowd.com" size="100"><br><br>
+    <label for="" style="size: 100;">Preferred timezone</label>
+    <select name="" id="">
+        <option value="">Pacifc Time(Us & canada)</option>
+        <option value="">Pacific Time(Uk)</option>
+    </select>
+
+    <h1>Swag details</h1>
+    <p>We use these details to get you swag.</p><br>
+    <label for="">Dress size(S,M,L...)</label>
+    <select name="" id="" >
+        <option value="">Small</option>
+        <option value="">Medium</option>
+        <option value="">Large</option>
+    </select><br><br>
+    <label for="">Shipping address</label><br>
+    <textarea name="" id="" cols="30" rows="10"></textarea><br>
+    <button onclick="update()">Update profile</button>
+   
+  display(alert("Your profile is updated successfully!"));
+
+    <h1>Deactivate account</h1>
+    <p>Deactivate your account will remove your ability to log into bugcrowd. 
+        You will be removed from all emails, public pages, and leaderboards. Your pending payment will be processed.</p>
+        <input  type="submit" value="Deactivate account" >
+    </fieldset>
+    </form>
+</body>
+</html>

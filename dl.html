@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descriptive</title>
+    <style>
+        h1{
+           text-shadow: -1px 8px red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1><ins>Favourite Actors</ins></h1>
+    <dl>
+        <dt><ins>Here are some of my favourite actors</ins></dt>
+        <dd><a href="r.html">Nani</a></dd>
+        <dd>Adhi</dd>
+        <dd>Vaishnav</dd>
+        <dd>Arjun</dd>
+    </dl>
+    <canvas id="mycanvas" height="100" width="200" style="border: 2px solid black;"></canvas>
+    <script>
+        var s =document.getElementById("mycanvas");
+        var c = s.getContext("2d");
+      
+        c.arc(95,50,40,0,2*Math.PI);
+        c.stroke();
+        c.font ="5px Arial";
+        c.fillStyle = "red";
+        c.fillText("Hello World", 10,50) 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+    <style>
+        @keyframes scrollLeft {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        @keyframes scrollRight {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .scrolling-text {
+            white-space: nowrap;
+            overflow: hidden;
+            animation: scrollLeft 10s linear infinite;
+        }
+
+        .scrolling-text.reverse {
+            animation: scrollRight 10s linear infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scrolling-text">Welcome to our website! </div>
+    <div class="scrolling-text reverse"> Welcome to our website! </div>
+
+</body>
+</html>

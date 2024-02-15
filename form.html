@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Student details</legend>
+        <label for="name" >Name:</label>
+        <input name="name" type="text" disabled><br>
+        <label for="pass">Mobile:</label>
+        <input  password="pass" type="number" readonly><br>
+        <label for="">email:</label>
+        <input type="email" > <br>
+        <label for="">DOB:</label>
+        <input type="date"><br>
+        <label for="br">Branch</label>
+        <select name="br" id="br">
+            <option value="">CSSE</option>
+            <option value="">CSE(CS)</option>
+        </select><br>
+        <label for="gen">Gender:</label>
+        <input type="radio" name="gen" id="gen">
+        <label for="gen">Female</label>
+        <input type="radio" name="gen" id="gen">
+        <label for="gen">Male</label><br>
+        <label for="">Age:</label>
+        <select name="" id="">
+            <option value="">Below20+</option>
+            <option value="">Above20+</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Student marks</legend>
+        <label for="sub">Subject</label>
+        <select name="sub" id="sub">
+            <option value="">HTML</option>
+            <option value="">JAVA</option>
+            <option value="">CSS</option>
+        </select><br>
+        <label for="">Marks:</label> <br>
+        <input type="checkbox" name="ma" id="ma">
+        <label for="ma">GPA</label> <br>
+        <input type="checkbox" name="ma" id="ma">
+        <label for="ma">CGPA</label><br>
+        <input type="checkbox" name="ma" id="ma">
+        <label for="ma">PERCENTAGE</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Adress</legend>
+        <label for="">Village:</label>
+        <input type="text">
+        <label for="">Mandal:</label>
+        <input type="text"><br>
+        <label for="">District:</label>
+        <input type="text">
+        <label for="pin">Pincode:</label>
+        <input type="number" name="pin" id="pin" size="6">
+    </fieldset>
+
+    <fieldset>
+        <legend>Personal info</legend>
+        <label for="">Choose file:</label>
+        <input type="file">
+        
+    </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>

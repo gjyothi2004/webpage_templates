@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Click on movie name to get director name</h1>
+   <ul>
+    <li onclick="showDetails(this)" 
+     data-movie-dir="prashant">
+     hanuma</li>
+    <li  onclick="showDetails(this)" 
+     data-movie-dir="rajamouli">bahubali</li>
+    <li  onclick="showDetails(this)" 
+     data-movie-dir="shourya">
+     hinanna</li>
+   </ul>
+
+   <script>
+    function showDetails(mv){
+        var movieDir= mv.getAttribute("data-movie-dir");
+        alert("The" + mv.innerHTML + "director is" + movieDir + ".");
+    }
+   </script>
+   <img src=https://www.adorama.com/alc/wp-content/uploads/2021/04/photography-camera-learning-feature.jpg alt="yy">
+   <img src="https://images.news18.com/ibnlive/uploads/2021/08/sun-photo-16293134143x2.jpg?impolicy=website&width=510&height=356" alt="">
+   <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/07/social-media-for-photographers-follow-1.jpg" alt="">
+   <img src="https://iso.500px.com/wp-content/uploads/2016/10/stock-photo-159358357.jpg" alt="">
+   <div>
+    Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   </div>
+</body>
+</html>

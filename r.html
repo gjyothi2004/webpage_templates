@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(https://img.freepik.com/free-photo/two-plants-dark-surface_23-2147661190.jpg?size=626&ext=jpg&ga=GA1.1.1473173276.1706793734&semt=ais);
+            background-repeat: repeat-x;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restaurent menu</h1>
+    <h2 onclick="menu('item1')">Starters</h2>
+    <h2 onclick="menu('item2')">Biriyanis</h2>
+    <h2 onclick="menu('item3')">specials</h2>
+    <h2 id="ice" onclick="menu('item3')" ondblclick="myClick(this)">Ice cream</h2>
+    <h3 onclick="">Dessert</h3>
+    <div id="popup" class="popup">
+        <p>good</p>
+    </div>
+    <script>
+       
+        function menu(item){
+            document.getElementById( 'popup' ).style.display = 'block';
+        }
+        function myClick(id){
+            var  s=document.getElementById('ice');
+            s.parentNode.removeChild(s);
+        }
+        window.onresize=function(){
+            document.write('please reload the page');
+        }
+    </script>
+</body>
+</html>
